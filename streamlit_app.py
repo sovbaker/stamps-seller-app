@@ -20,5 +20,5 @@ with conn.session as s:
     s.commit()
 
 # Query and display the data you inserted
-pet_owners = conn.query(text('select * from pet_owners'))
+pet_owners = conn.query('select * from pet_owners')
 st.dataframe(pet_owners)
